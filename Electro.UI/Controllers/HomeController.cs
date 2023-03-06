@@ -1,6 +1,10 @@
 ﻿using Electro.UI.Models;
+using IdentityModel.Client;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Net.Http;
 
 namespace Electro.UI.Controllers
 {
@@ -13,8 +17,24 @@ namespace Electro.UI.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        [Authorize]
+        public async Task<IActionResult> Index()
         {
+            var token = await HttpContext.GetTokenAsync("access_token");
+
+            var httpClient = new HttpClient();
+
+            /*            HttpRequestMessage message = new HttpRequestMessage();
+                        message.Headers.Add("Accept", "application/json");
+                        message.RequestUri = new Uri("https://localhost:6001/api/products");
+                        message.Method = HttpMethod.Post;
+
+
+                        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+                        var apiResponse = await client.SendAsync(message);*/
+
+            httpClient.SetBearerToken(token);
+            var result = await httpClient.GetAsync("https://localhost:6001/api/products");
             return View();
         }
 
