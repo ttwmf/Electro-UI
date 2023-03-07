@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Electro.UI", "Electro.UI\Electro.UI.csproj", "{E4A6C843-A806-4245-B0E5-CB76611E4213}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Electro.WebApp", "Electro.WebApp\Electro.WebApp.csproj", "{1AB092B4-6474-4BC0-B6A2-878B0368A0FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E4A6C843-A806-4245-B0E5-CB76611E4213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E4A6C843-A806-4245-B0E5-CB76611E4213}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E4A6C843-A806-4245-B0E5-CB76611E4213}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E4A6C843-A806-4245-B0E5-CB76611E4213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB092B4-6474-4BC0-B6A2-878B0368A0FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB092B4-6474-4BC0-B6A2-878B0368A0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB092B4-6474-4BC0-B6A2-878B0368A0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB092B4-6474-4BC0-B6A2-878B0368A0FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
